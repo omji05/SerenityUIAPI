@@ -16,3 +16,8 @@ Feature: Making an appointment
     Examples:
       | Facility                     | healthCareProgram | Comment                |Date|
       | Tokyo CURA Healthcare Center | Medicaid          | This is a test comment |21/03/2024|
+
+
+  @Run
+  Scenario: Reading Data from excel
+    Given we are able to read data from excel file "details.xlsx" on tab "Sheet1"
